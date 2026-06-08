@@ -1,3 +1,30 @@
 {
-  "title": "Матчи"
+  "title": "Матчи",
+  "upcoming": "Ближайшие матчи",
+  "recentResults": "Последние результаты",
+  "vs": "vs",
+  "status": {
+    "upcoming": "Предстоящий",
+    "live": "Идёт сейчас",
+    "finished": "Завершён"
+  },
+  "detail": {
+    "competition": "Турнир",
+    "stadium": "Стадион",
+    "date": "Дата",
+    "back": "← Назад к матчам"
+  },
+  "standings": {
+    "title": "Турнирная таблица",
+    "position": "№",
+    "club": "Клуб",
+    "played": "И",
+    "won": "В",
+    "drawn": "Н",
+    "lost": "П",
+    "goalsFor": "ЗМ",
+    "goalsAgainst": "ПМ",
+    "points": "О",
+    "back": "← Назад к матчам"
+  }
 }

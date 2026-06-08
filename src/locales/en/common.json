@@ -22,6 +22,8 @@
     "pressArea": "Press area",
     "rights": "All rights reserved"
   },
+  "loading": "Loading...",
+  "notFound": "Nothing found",
   "buttons": {
     "submit": "Submit",
     "cancel": "Cancel",

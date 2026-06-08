@@ -1,3 +1,31 @@
 {
-  "title": "Team"
+  "title": "Squad",
+  "subtitle": "Football — Men's team",
+  "positions": {
+    "gardien": "Goalkeepers",
+    "défenseur": "Defenders",
+    "milieu": "Midfielders",
+    "attaquant": "Forwards"
+  },
+  "viewProfile": "Profile →",
+  "player": {
+    "number": "Number",
+    "position": "Position",
+    "positionLabels": {
+      "gardien": "Goalkeeper",
+      "défenseur": "Defender",
+      "milieu": "Midfielder",
+      "attaquant": "Forward"
+    },
+    "nationality": "Nationality",
+    "birthDate": "Date of birth",
+    "biography": "Biography",
+    "stats": "Statistics",
+    "onLoan": "On loan",
+    "back": "← Back to squad"
+  },
+  "staff": {
+    "title": "Coaching staff",
+    "role": "Role"
+  }
 }

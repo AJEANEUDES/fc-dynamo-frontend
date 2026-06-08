@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="FC Dynamo City">
+  <rect width="300" height="300" fill="#0A2342"/>
+  <circle cx="150" cy="115" r="55" fill="#1E3A5F"/>
+  <path d="M60 280c0-58 40-95 90-95s90 37 90 95z" fill="#1E3A5F"/>
+  <text x="150" y="265" text-anchor="middle" font-family="Roboto, Inter, sans-serif" font-weight="900" font-size="22" fill="#C8A951">FC DYNAMO</text>
+</svg>

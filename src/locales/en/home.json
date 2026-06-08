@@ -1,3 +1,11 @@
 {
-  "title": "Home"
+  "hero": {
+    "title": "FC Dynamo City",
+    "slogan": "Passion · Work · Victory",
+    "watchMatches": "Watch matches",
+    "buyTickets": "Buy tickets"
+  },
+  "nextMatch": "Upcoming match",
+  "latestNews": "Latest news",
+  "viewAll": "View all →"
 }

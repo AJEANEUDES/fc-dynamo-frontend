@@ -7,8 +7,13 @@ import Footer from '../components/layout/Footer';
 import Home from '../pages/Home';
 import Club from '../pages/Club';
 import Team from '../pages/Team';
+import PlayerDetail from '../pages/PlayerDetail';
+import StaffPage from '../pages/StaffPage';
 import News from '../pages/News';
+import NewsDetail from '../pages/NewsDetail';
 import Matches from '../pages/Matches';
+import MatchDetail from '../pages/MatchDetail';
+import Standings from '../pages/Standings';
 import Shop from '../pages/Shop';
 import Tickets from '../pages/Tickets';
 import Contact from '../pages/Contact';
@@ -51,8 +56,13 @@ export default function AppRouter() {
             <Route path="/" element={<Home />} />
             <Route path="/club" element={<Club />} />
             <Route path="/equipe" element={<Team />} />
+            <Route path="/equipe/:id" element={<PlayerDetail />} />
+            <Route path="/staff" element={<StaffPage />} />
             <Route path="/actualites" element={<News />} />
+            <Route path="/actualites/:slug" element={<NewsDetail />} />
             <Route path="/matchs" element={<Matches />} />
+            <Route path="/matchs/:id" element={<MatchDetail />} />
+            <Route path="/classement" element={<Standings />} />
             <Route path="/boutique" element={<Shop />} />
             <Route path="/billets" element={<Tickets />} />
             <Route path="/contact" element={<Contact />} />

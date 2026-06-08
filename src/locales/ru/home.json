@@ -1,3 +1,11 @@
 {
-  "title": "Главная страница"
+  "hero": {
+    "title": "FC Dynamo City",
+    "slogan": "Страсть · Труд · Победа",
+    "watchMatches": "Смотреть матчи",
+    "buyTickets": "Купить билеты"
+  },
+  "nextMatch": "Ближайший матч",
+  "latestNews": "Последние новости",
+  "viewAll": "Смотреть все →"
 }

@@ -1,3 +1,30 @@
 {
-  "title": "Matches"
+  "title": "Matches",
+  "upcoming": "Upcoming matches",
+  "recentResults": "Recent results",
+  "vs": "vs",
+  "status": {
+    "upcoming": "Upcoming",
+    "live": "Live",
+    "finished": "Finished"
+  },
+  "detail": {
+    "competition": "Competition",
+    "stadium": "Stadium",
+    "date": "Date",
+    "back": "← Back to matches"
+  },
+  "standings": {
+    "title": "League table",
+    "position": "#",
+    "club": "Club",
+    "played": "P",
+    "won": "W",
+    "drawn": "D",
+    "lost": "L",
+    "goalsFor": "GF",
+    "goalsAgainst": "GA",
+    "points": "Pts",
+    "back": "← Back to matches"
+  }
 }
