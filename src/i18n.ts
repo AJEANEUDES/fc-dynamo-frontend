@@ -7,6 +7,7 @@ import ruTeam from './locales/ru/team.json';
 import ruMatches from './locales/ru/matches.json';
 import ruNews from './locales/ru/news.json';
 import ruVideos from './locales/ru/videos.json';
+import ruGallery from './locales/ru/gallery.json';
 import ruShop from './locales/ru/shop.json';
 import ruAuth from './locales/ru/auth.json';
 import ruAdmin from './locales/ru/admin.json';
@@ -17,6 +18,7 @@ import enTeam from './locales/en/team.json';
 import enMatches from './locales/en/matches.json';
 import enNews from './locales/en/news.json';
 import enVideos from './locales/en/videos.json';
+import enGallery from './locales/en/gallery.json';
 import enShop from './locales/en/shop.json';
 import enAuth from './locales/en/auth.json';
 import enAdmin from './locales/en/admin.json';
@@ -27,13 +29,13 @@ i18n
     lng: 'ru',
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
-    ns: ['common', 'home', 'team', 'matches', 'news', 'videos', 'shop', 'auth', 'admin'],
+    ns: ['common', 'home', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'auth', 'admin'],
     defaultNS: 'common',
     resources: {
       ru: { common: ruCommon, home: ruHome, team: ruTeam, matches: ruMatches,
-            news: ruNews, videos: ruVideos, shop: ruShop, auth: ruAuth, admin: ruAdmin },
+            news: ruNews, videos: ruVideos, gallery: ruGallery, shop: ruShop, auth: ruAuth, admin: ruAdmin },
       en: { common: enCommon, home: enHome, team: enTeam, matches: enMatches,
-            news: enNews, videos: enVideos, shop: enShop, auth: enAuth, admin: enAdmin },
+            news: enNews, videos: enVideos, gallery: enGallery, shop: enShop, auth: enAuth, admin: enAdmin },
     },
     interpolation: { escapeValue: false },
   });

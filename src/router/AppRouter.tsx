@@ -7,6 +7,7 @@ import Footer from '../components/layout/Footer';
 import Home from '../pages/Home';
 import PSGTV from '../pages/PSGTV';
 import VideoDetail from '../pages/VideoDetail';
+import Gallery from '../pages/Gallery';
 import Club from '../pages/Club';
 import Team from '../pages/Team';
 import PlayerDetail from '../pages/PlayerDetail';
@@ -58,6 +59,7 @@ export default function AppRouter() {
             <Route path="/" element={<Home />} />
             <Route path="/psg-tv" element={<PSGTV />} />
             <Route path="/psg-tv/:id" element={<VideoDetail />} />
+            <Route path="/galerie" element={<Gallery />} />
             <Route path="/club" element={<Club />} />
             <Route path="/equipe" element={<Team />} />
             <Route path="/equipe/:id" element={<PlayerDetail />} />
