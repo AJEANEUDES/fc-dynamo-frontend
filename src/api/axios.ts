@@ -5,14 +5,19 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
+    'Accept-Language': localStorage.getItem('fc_lang') ?? 'ru',
   },
 });
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
+  const lang = localStorage.getItem('fc_lang') ?? 'ru';
+
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
+  config.headers['Accept-Language'] = lang;
+
   return config;
 });
 

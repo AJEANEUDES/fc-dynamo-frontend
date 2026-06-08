@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "club": "Club",
+    "team": "Team",
+    "news": "News",
+    "matches": "Matches",
+    "shop": "Shop",
+    "tickets": "Tickets",
+    "myAccount": "My Account",
+    "admin": "Admin Panel",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "language": "Language"
+  },
+  "footer": {
+    "description": "Football club founded in 1985. Passion, work, victory.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "contactForm": "Contact form",
+    "pressArea": "Press area",
+    "rights": "All rights reserved"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "errors": {
+    "required": "Required field",
+    "invalidEmail": "Invalid email format",
+    "passwordTooShort": "Password too short (min. 8 characters)",
+    "passwordMismatch": "Passwords do not match",
+    "serverError": "Server error. Please try again later.",
+    "invalidCredentials": "Invalid email or password."
+  }
+}

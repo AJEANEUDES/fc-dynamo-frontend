@@ -16,6 +16,7 @@ import Press from '../pages/Press';
 
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
+import Confirmation from '../pages/auth/Confirmation';
 
 import MemberDashboard from '../pages/member/Dashboard';
 import MyTickets from '../pages/member/MyTickets';
@@ -60,6 +61,7 @@ export default function AppRouter() {
             {/* Auth */}
             <Route path="/connexion" element={<Login />} />
             <Route path="/inscription" element={<Register />} />
+            <Route path="/confirmation" element={<Confirmation />} />
 
             {/* Espace membre */}
             <Route path="/mon-espace" element={<RequireAuth><MemberDashboard /></RequireAuth>} />

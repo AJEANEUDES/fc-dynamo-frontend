@@ -14,15 +14,15 @@ export default function ArticleCard({ article }: Props) {
     <Link to={`/actualites/${article.slug}`} className="block">
       <div className="bg-white rounded-xl shadow hover:shadow-md transition-shadow overflow-hidden">
         {article.image && (
-          <img src={article.image} alt={article.title} className="w-full h-40 object-cover" />
+          <img src={article.image} alt={article.title_ru} className="w-full h-40 object-cover" />
         )}
         <div className="p-4">
           {article.category && (
             <span className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
-              {article.category.name}
+              {article.category.name_ru}
             </span>
           )}
-          <h3 className="font-bold text-gray-900 mt-1 line-clamp-2">{article.title}</h3>
+          <h3 className="font-bold text-gray-900 mt-1 line-clamp-2">{article.title_ru}</h3>
           <p className="text-xs text-gray-400 mt-2">{date}</p>
         </div>
       </div>

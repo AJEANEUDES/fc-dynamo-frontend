@@ -14,13 +14,13 @@ export default function Shop() {
           <div key={p.id} className="bg-white rounded-xl shadow hover:shadow-md transition-shadow overflow-hidden">
             <div className="h-40 bg-gray-100 flex items-center justify-center">
               {p.image ? (
-                <img src={p.image} alt={p.name} className="h-full w-full object-cover" />
+                <img src={p.image} alt={p.name_ru} className="h-full w-full object-cover" />
               ) : (
                 <span className="text-gray-400 text-sm">Pas d'image</span>
               )}
             </div>
             <div className="p-4">
-              <h3 className="font-bold text-gray-900 text-sm">{p.name}</h3>
+              <h3 className="font-bold text-gray-900 text-sm">{p.name_ru}</h3>
               <p className="text-blue-700 font-bold mt-1">{Number(p.price).toFixed(2)} €</p>
               <p className="text-xs text-gray-400 mt-1">Stock : {p.stock}</p>
             </div>

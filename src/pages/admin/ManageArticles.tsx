@@ -31,8 +31,8 @@ export default function ManageArticles() {
           <tbody className="divide-y divide-gray-100">
             {articles?.map((a) => (
               <tr key={a.id} className="hover:bg-gray-50">
-                <td className="px-4 py-3 font-medium">{a.title}</td>
-                <td className="px-4 py-3 text-gray-500">{a.category?.name ?? '—'}</td>
+                <td className="px-4 py-3 font-medium">{a.title_ru}</td>
+                <td className="px-4 py-3 text-gray-500">{a.category?.name_ru ?? '—'}</td>
                 <td className="px-4 py-3 text-gray-500">
                   {new Date(a.published_at).toLocaleDateString('fr-FR')}
                 </td>
