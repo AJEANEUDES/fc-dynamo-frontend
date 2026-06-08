@@ -1,0 +1,14 @@
+{
+  "title": "PSG TV",
+  "subtitle": "Videos, interviews and exclusive club content",
+  "types": {
+    "all": "All",
+    "temps-forts": "Highlights",
+    "no-comment": "No Comment",
+    "emission": "Shows",
+    "interview": "Interviews",
+    "carte-blanche": "Carte Blanche"
+  },
+  "duration": "Duration",
+  "watch": "Watch"
+}
