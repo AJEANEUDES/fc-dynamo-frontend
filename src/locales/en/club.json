@@ -1,0 +1,17 @@
+{
+  "title": "The Club",
+  "subtitle": "The history, values and achievements of Dynamo City",
+  "trophies": {
+    "title": "Trophy Cabinet"
+  },
+  "history": {
+    "title": "Club history",
+    "paragraph1": "Founded in 1985, FC Dynamo City was born from the passion of a handful of football enthusiasts from the Dynamic district. Starting out in the regional championship, the club steadily grew into one of the country's leading sides.",
+    "paragraph2": "Today, Dynamo City brings together thousands of supporters at every home match and keeps developing its own academy, nurturing a new generation of players true to the club's spirit: hard work, passion and victory."
+  },
+  "values": {
+    "title": "Our values",
+    "excellence": "Excellence — we strive for the highest standard in our play, our preparation and the way the club is run, raising the bar every day.",
+    "passion": "Passion — football brings us together: players, staff and supporters who write the history of Dynamo City as one."
+  }
+}

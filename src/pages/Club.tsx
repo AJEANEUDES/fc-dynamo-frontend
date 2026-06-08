@@ -1,39 +1,87 @@
-export default function Club() {
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useGet } from '../hooks/useApi';
+import type { Trophy } from '../types';
+import { useLocalized } from '../hooks/useLocale';
+
+function TrophyCard({ trophy }: { trophy: Trophy }) {
+  const { pick } = useLocalized();
+  const [imgError, setImgError] = useState(false);
+  const title = pick(trophy.title_ru, trophy.title_en);
+
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Le Club</h1>
+    <div className="bg-[#0A2342] rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative h-40 bg-gradient-to-br from-[#1E3A5F] to-[#0A2342]">
+        {trophy.image && !imgError ? (
+          <img
+            src={trophy.image}
+            alt={title}
+            onError={() => setImgError(true)}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <svg className="w-12 h-12 text-[#C8A951]/60" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+          </div>
+        )}
+      </div>
+      <div className="p-4 flex items-center justify-between gap-3">
+        <h3 className="text-white font-bold leading-tight">{title}</h3>
+        <span className="bg-[#C8A951] text-[#0A2342] text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+          {trophy.season}
+        </span>
+      </div>
+    </div>
+  );
+}
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-blue-800 mb-3">Notre histoire</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Fondé en 1985, le FC Dynamo City est né de la passion de quelques amateurs de football du quartier de la Dynamique. Depuis ses humbles débuts en championnat régional, le club n'a cessé de grandir pour s'imposer aujourd'hui comme une référence nationale.
-        </p>
-      </section>
+export default function Club() {
+  const { t } = useTranslation('club');
+  const { data: trophies, isLoading } = useGet<Trophy[]>(['trophies'], '/trophies');
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-blue-800 mb-3">Nos valeurs</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            { label: 'Passion', desc: 'Le football est notre raison d\'être.' },
-            { label: 'Travail', desc: 'L\'excellence se construit chaque jour.' },
-            { label: 'Victoire', desc: 'Gagner ensemble, pour nos supporters.' },
-          ].map((v) => (
-            <div key={v.label} className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-center">
-              <h3 className="font-bold text-blue-800 text-lg">{v.label}</h3>
-              <p className="text-gray-600 text-sm mt-2">{v.desc}</p>
+  return (
+    <div>
+      <div className="bg-[#0A2342] py-16 text-center">
+        <h1 className="text-4xl font-black text-white mb-2">{t('title')}</h1>
+        <p className="text-[#C8A951]">{t('subtitle')}</p>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 py-12 space-y-16">
+        <section>
+          <h2 className="text-2xl font-bold text-[#0A2342] mb-6">{t('trophies.title')}</h2>
+          {isLoading ? (
+            <div className="text-center py-12 text-gray-500">{t('common:loading')}</div>
+          ) : trophies && trophies.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {trophies.map((trophy) => (
+                <TrophyCard key={trophy.id} trophy={trophy} />
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          ) : (
+            <div className="text-center py-12 text-gray-500">{t('common:notFound')}</div>
+          )}
+        </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold text-blue-800 mb-3">Palmarès</h2>
-        <ul className="space-y-2 text-gray-700">
-          <li className="flex items-center gap-2"><span className="text-yellow-500">🏆</span> Champion de Ligue 1 — 2019</li>
-          <li className="flex items-center gap-2"><span className="text-yellow-500">🏆</span> Coupe Nationale — 2021, 2023</li>
-          <li className="flex items-center gap-2"><span className="text-gray-400">🥈</span> Vice-Champion — 2024, 2026</li>
-        </ul>
-      </section>
+        <section>
+          <h2 className="text-2xl font-bold text-[#0A2342] mb-4">{t('history.title')}</h2>
+          <p className="text-gray-700 leading-relaxed">{t('history.paragraph1')}</p>
+          <p className="text-gray-700 leading-relaxed mt-4">{t('history.paragraph2')}</p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#0A2342] mb-6">{t('values.title')}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="bg-white border border-gray-100 rounded-2xl shadow-lg p-6">
+              <p className="text-gray-700 leading-relaxed">{t('values.excellence')}</p>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl shadow-lg p-6">
+              <p className="text-gray-700 leading-relaxed">{t('values.passion')}</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
