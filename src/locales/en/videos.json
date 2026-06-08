@@ -10,5 +10,7 @@
     "carte-blanche": "Carte Blanche"
   },
   "duration": "Duration",
-  "watch": "Watch"
+  "watch": "Watch",
+  "back": "← Back to videos",
+  "publishedOn": "Published on"
 }

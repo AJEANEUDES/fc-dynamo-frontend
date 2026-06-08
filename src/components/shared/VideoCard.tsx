@@ -7,7 +7,7 @@ interface Props {
   video: Video;
 }
 
-function formatDuration(seconds?: number): string | null {
+export function formatDuration(seconds?: number): string | null {
   if (!seconds) return null;
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
