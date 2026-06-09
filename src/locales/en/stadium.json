@@ -1,0 +1,19 @@
+{
+  "title": "Dynamo City Stadium",
+  "subtitle": "Our home. Our fortress.",
+  "stats": {
+    "capacity": "Capacity",
+    "capacityValue": "45,000",
+    "opened": "Opened",
+    "openedValue": "1985",
+    "surface": "Surface",
+    "surfaceValue": "Natural grass",
+    "location": "Location",
+    "locationValue": "Dynamic district, city centre"
+  },
+  "about": {
+    "title": "About the stadium",
+    "paragraph1": "Dynamo City Stadium has been the club's home ground since its founding in 1985. Situated in the heart of the Dynamic district, the stadium underwent a major renovation in 2010 — modern stands, upgraded facilities and a resurfaced pitch now offer the best possible experience for 45,000 supporters.",
+    "paragraph2": "The atmosphere at a Dynamo City home match is like no other. The roar of the stands, the club's gold-and-navy colours and the feeling of belonging to something greater — that is what makes every match an unforgettable occasion."
+  }
+}
