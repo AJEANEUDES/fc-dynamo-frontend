@@ -1,0 +1,16 @@
+{
+  "title": "Training Campus",
+  "subtitle": "Where champions are made.",
+  "facilities": {
+    "title": "Our facilities",
+    "pitches":  { "title": "4 training pitches", "desc": "Natural and artificial turf — full-size and small-sided formats." },
+    "gym":      { "title": "Gym", "desc": "State-of-the-art strength and conditioning equipment for every player." },
+    "medical":  { "title": "Medical centre", "desc": "Doctors and physiotherapists provide round-the-clock player support." },
+    "recovery": { "title": "Recovery zone", "desc": "Swimming pool, cryo-chamber and spa area for rapid post-match rehabilitation." }
+  },
+  "academy": {
+    "title": "Dynamo City Academy",
+    "paragraph1": "The club academy accepts players from the age of 7, offering them a structured development programme under certified coaches. Every young player follows an individual plan focused on technique, tactics and physical conditioning.",
+    "paragraph2": "Over the past ten years the academy has produced more than 20 professional footballers, several of whom have broken into the Dynamo City first team. We believe the club's future is built right here, on our training pitches."
+  }
+}

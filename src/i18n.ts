@@ -5,6 +5,7 @@ import ruCommon from './locales/ru/common.json';
 import ruHome from './locales/ru/home.json';
 import ruClub from './locales/ru/club.json';
 import ruStadium from './locales/ru/stadium.json';
+import ruCampus from './locales/ru/campus.json';
 import ruTeam from './locales/ru/team.json';
 import ruMatches from './locales/ru/matches.json';
 import ruNews from './locales/ru/news.json';
@@ -18,6 +19,7 @@ import enCommon from './locales/en/common.json';
 import enHome from './locales/en/home.json';
 import enClub from './locales/en/club.json';
 import enStadium from './locales/en/stadium.json';
+import enCampus from './locales/en/campus.json';
 import enTeam from './locales/en/team.json';
 import enMatches from './locales/en/matches.json';
 import enNews from './locales/en/news.json';
@@ -33,14 +35,14 @@ i18n
     lng: 'ru',
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
-    ns: ['common', 'home', 'club', 'stadium', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'auth', 'admin'],
+    ns: ['common', 'home', 'club', 'stadium', 'campus', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'auth', 'admin'],
     defaultNS: 'common',
     resources: {
-      ru: { common: ruCommon, home: ruHome, club: ruClub, stadium: ruStadium, team: ruTeam,
-            matches: ruMatches, news: ruNews, videos: ruVideos, gallery: ruGallery,
+      ru: { common: ruCommon, home: ruHome, club: ruClub, stadium: ruStadium, campus: ruCampus,
+            team: ruTeam, matches: ruMatches, news: ruNews, videos: ruVideos, gallery: ruGallery,
             shop: ruShop, auth: ruAuth, admin: ruAdmin },
-      en: { common: enCommon, home: enHome, club: enClub, stadium: enStadium, team: enTeam,
-            matches: enMatches, news: enNews, videos: enVideos, gallery: enGallery,
+      en: { common: enCommon, home: enHome, club: enClub, stadium: enStadium, campus: enCampus,
+            team: enTeam, matches: enMatches, news: enNews, videos: enVideos, gallery: enGallery,
             shop: enShop, auth: enAuth, admin: enAdmin },
     },
     interpolation: { escapeValue: false },
