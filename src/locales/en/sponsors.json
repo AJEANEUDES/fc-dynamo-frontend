@@ -1,0 +1,10 @@
+{
+  "title": "Our sponsors",
+  "subtitle": "Partners who share the values of Dynamo City",
+  "tiers": {
+    "officiel":    "Official sponsor",
+    "partenaire":  "Club partners",
+    "fournisseur": "Suppliers"
+  },
+  "visitSite": "Visit website →"
+}

@@ -10,6 +10,7 @@ import VideoDetail from '../pages/VideoDetail';
 import Gallery from '../pages/Gallery';
 import Stadium from '../pages/Stadium';
 import Campus from '../pages/Campus';
+import Sponsors from '../pages/Sponsors';
 import Club from '../pages/Club';
 import Team from '../pages/Team';
 import PlayerDetail from '../pages/PlayerDetail';
@@ -64,6 +65,7 @@ export default function AppRouter() {
             <Route path="/galerie" element={<Gallery />} />
             <Route path="/stade" element={<Stadium />} />
             <Route path="/campus" element={<Campus />} />
+            <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/club" element={<Club />} />
             <Route path="/equipe" element={<Team />} />
             <Route path="/equipe/:id" element={<PlayerDetail />} />

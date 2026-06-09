@@ -6,6 +6,7 @@ import ruHome from './locales/ru/home.json';
 import ruClub from './locales/ru/club.json';
 import ruStadium from './locales/ru/stadium.json';
 import ruCampus from './locales/ru/campus.json';
+import ruSponsors from './locales/ru/sponsors.json';
 import ruTeam from './locales/ru/team.json';
 import ruMatches from './locales/ru/matches.json';
 import ruNews from './locales/ru/news.json';
@@ -20,6 +21,7 @@ import enHome from './locales/en/home.json';
 import enClub from './locales/en/club.json';
 import enStadium from './locales/en/stadium.json';
 import enCampus from './locales/en/campus.json';
+import enSponsors from './locales/en/sponsors.json';
 import enTeam from './locales/en/team.json';
 import enMatches from './locales/en/matches.json';
 import enNews from './locales/en/news.json';
@@ -35,15 +37,15 @@ i18n
     lng: 'ru',
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
-    ns: ['common', 'home', 'club', 'stadium', 'campus', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'auth', 'admin'],
+    ns: ['common', 'home', 'club', 'stadium', 'campus', 'sponsors', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'auth', 'admin'],
     defaultNS: 'common',
     resources: {
       ru: { common: ruCommon, home: ruHome, club: ruClub, stadium: ruStadium, campus: ruCampus,
-            team: ruTeam, matches: ruMatches, news: ruNews, videos: ruVideos, gallery: ruGallery,
-            shop: ruShop, auth: ruAuth, admin: ruAdmin },
+            sponsors: ruSponsors, team: ruTeam, matches: ruMatches, news: ruNews,
+            videos: ruVideos, gallery: ruGallery, shop: ruShop, auth: ruAuth, admin: ruAdmin },
       en: { common: enCommon, home: enHome, club: enClub, stadium: enStadium, campus: enCampus,
-            team: enTeam, matches: enMatches, news: enNews, videos: enVideos, gallery: enGallery,
-            shop: enShop, auth: enAuth, admin: enAdmin },
+            sponsors: enSponsors, team: enTeam, matches: enMatches, news: enNews,
+            videos: enVideos, gallery: enGallery, shop: enShop, auth: enAuth, admin: enAdmin },
     },
     interpolation: { escapeValue: false },
   });
