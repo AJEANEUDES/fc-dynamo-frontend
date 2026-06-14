@@ -49,6 +49,7 @@ import ManagePlayers from '../pages/admin/ManagePlayers';
 import ManageMatches from '../pages/admin/ManageMatches';
 import ManageArticles from '../pages/admin/ManageArticles';
 import ManageUsers from '../pages/admin/ManageUsers';
+import ManageProducts from '../pages/admin/ManageProducts';
 
 function RequireAuth({ children }: { children: React.ReactElement }) {
   const { isAuthenticated, loading } = useAuth();
@@ -120,6 +121,7 @@ export default function AppRouter() {
             <Route path="/admin/matchs" element={<RequireAdmin><ManageMatches /></RequireAdmin>} />
             <Route path="/admin/articles" element={<RequireAdmin><ManageArticles /></RequireAdmin>} />
             <Route path="/admin/utilisateurs" element={<RequireAdmin><ManageUsers /></RequireAdmin>} />
+            <Route path="/admin/produits" element={<RequireAdmin><ManageProducts /></RequireAdmin>} />
 
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
