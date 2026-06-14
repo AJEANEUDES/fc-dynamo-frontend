@@ -1,0 +1,53 @@
+{
+  "title": "Tickets",
+  "subtitle": "Official FC Dynamo City ticketing",
+  "options": {
+    "ticketplace": {
+      "title": "Ticketplace",
+      "desc": "Buy tickets through our official partner website"
+    },
+    "standard": {
+      "title": "Standard Tickets",
+      "desc": "All season matches on general sale"
+    },
+    "vip": {
+      "title": "VIP",
+      "desc": "Exclusive experience with VIP lounge access"
+    },
+    "gift": {
+      "title": "Gift Card",
+      "desc": "Give the gift of unforgettable moments"
+    }
+  },
+  "upcoming": "Upcoming matches",
+  "noMatches": "No upcoming matches",
+  "availability": {
+    "available": "Available",
+    "limited": "Limited",
+    "soldOut": "Sold Out"
+  },
+  "buyTicket": "Buy ticket",
+  "home": "Home",
+  "away": "Away",
+  "pricePerTicket": "€25.00 / ticket",
+  "quantity": "Number of tickets",
+  "total": "Total",
+  "pay": "Pay",
+  "paying": "Processing...",
+  "maxTickets": "Maximum 4 tickets per order",
+  "backToTickets": "Back to matches",
+  "confirmation": {
+    "title": "Ticket purchased!",
+    "subtitle": "Your e-ticket is ready",
+    "quantity": "Quantity",
+    "total": "Total",
+    "download": "Download ticket",
+    "myTickets": "My tickets",
+    "continueShopping": "Back to schedule"
+  },
+  "myTickets": {
+    "title": "My Tickets",
+    "empty": "You have not purchased any tickets yet",
+    "quantity": "Tickets"
+  }
+}

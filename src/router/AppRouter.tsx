@@ -26,6 +26,9 @@ import Cart from '../pages/Cart';
 import Checkout from '../pages/Checkout';
 import OrderConfirmation from '../pages/OrderConfirmation';
 import Tickets from '../pages/Tickets';
+import Ticketing from '../pages/Ticketing';
+import TicketPurchase from '../pages/TicketPurchase';
+import TicketConfirmation from '../pages/TicketConfirmation';
 import Contact from '../pages/Contact';
 import Press from '../pages/Press';
 
@@ -85,6 +88,10 @@ export default function AppRouter() {
             <Route path="/commande" element={<RequireAuth><Checkout /></RequireAuth>} />
             <Route path="/commande-confirmee" element={<RequireAuth><OrderConfirmation /></RequireAuth>} />
             <Route path="/billets" element={<Tickets />} />
+            <Route path="/billetterie" element={<Ticketing />} />
+            {/* /billetterie/confirmation doit être AVANT /:matchId pour éviter le conflit de route */}
+            <Route path="/billetterie/confirmation" element={<RequireAuth><TicketConfirmation /></RequireAuth>} />
+            <Route path="/billetterie/:matchId" element={<RequireAuth><TicketPurchase /></RequireAuth>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/presse" element={<Press />} />
 

@@ -13,6 +13,7 @@ import ruNews from './locales/ru/news.json';
 import ruVideos from './locales/ru/videos.json';
 import ruGallery from './locales/ru/gallery.json';
 import ruShop from './locales/ru/shop.json';
+import ruTickets from './locales/ru/tickets.json';
 import ruAuth from './locales/ru/auth.json';
 import ruAdmin from './locales/ru/admin.json';
 
@@ -28,6 +29,7 @@ import enNews from './locales/en/news.json';
 import enVideos from './locales/en/videos.json';
 import enGallery from './locales/en/gallery.json';
 import enShop from './locales/en/shop.json';
+import enTickets from './locales/en/tickets.json';
 import enAuth from './locales/en/auth.json';
 import enAdmin from './locales/en/admin.json';
 
@@ -37,15 +39,15 @@ i18n
     lng: 'ru',
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
-    ns: ['common', 'home', 'club', 'stadium', 'campus', 'sponsors', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'auth', 'admin'],
+    ns: ['common', 'home', 'club', 'stadium', 'campus', 'sponsors', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'tickets', 'auth', 'admin'],
     defaultNS: 'common',
     resources: {
       ru: { common: ruCommon, home: ruHome, club: ruClub, stadium: ruStadium, campus: ruCampus,
             sponsors: ruSponsors, team: ruTeam, matches: ruMatches, news: ruNews,
-            videos: ruVideos, gallery: ruGallery, shop: ruShop, auth: ruAuth, admin: ruAdmin },
+            videos: ruVideos, gallery: ruGallery, shop: ruShop, tickets: ruTickets, auth: ruAuth, admin: ruAdmin },
       en: { common: enCommon, home: enHome, club: enClub, stadium: enStadium, campus: enCampus,
             sponsors: enSponsors, team: enTeam, matches: enMatches, news: enNews,
-            videos: enVideos, gallery: enGallery, shop: enShop, auth: enAuth, admin: enAdmin },
+            videos: enVideos, gallery: enGallery, shop: enShop, tickets: enTickets, auth: enAuth, admin: enAdmin },
     },
     interpolation: { escapeValue: false },
   });

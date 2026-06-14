@@ -27,7 +27,7 @@ export default function Navbar() {
           <NavLink to="/actualites" className={linkClass}>{t('nav.news')}</NavLink>
           <NavLink to="/matchs" className={linkClass}>{t('nav.matches')}</NavLink>
           <NavLink to="/boutique" className={linkClass}>{t('nav.shop')}</NavLink>
-          <NavLink to="/billets" className={linkClass}>{t('nav.tickets')}</NavLink>
+          <NavLink to="/billetterie" className={linkClass}>{t('nav.tickets')}</NavLink>
         </div>
 
         <div className="flex items-center gap-3 text-sm">
