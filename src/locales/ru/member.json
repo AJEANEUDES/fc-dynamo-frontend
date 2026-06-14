@@ -1,0 +1,44 @@
+{
+  "dashboard": {
+    "title": "Личный кабинет",
+    "welcome": "Добро пожаловать",
+    "memberSince": "Участник с",
+    "cards": {
+      "tickets": "Мои билеты",
+      "ticketsDesc": "История покупок билетов",
+      "orders": "Мои заказы",
+      "ordersDesc": "История заказов магазина",
+      "tours": "Мои экскурсии",
+      "toursDesc": "Забронированные экскурсии",
+      "profile": "Мой профиль",
+      "profileDesc": "Редактировать личные данные"
+    }
+  },
+  "orders": {
+    "title": "Мои заказы",
+    "empty": "У вас ещё нет заказов",
+    "order": "Заказ",
+    "date": "Дата",
+    "total": "Итого",
+    "backToDashboard": "← Личный кабинет",
+    "status": {
+      "pending": "В обработке",
+      "paid": "Оплачен",
+      "shipped": "Отправлен",
+      "cancelled": "Отменён"
+    }
+  },
+  "profile": {
+    "title": "Мой профиль",
+    "backToDashboard": "← Личный кабинет",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "passwordSection": "Изменить пароль",
+    "currentPassword": "Текущий пароль",
+    "newPassword": "Новый пароль",
+    "save": "Сохранить изменения",
+    "saving": "Сохранение...",
+    "success": "Профиль успешно обновлён!"
+  }
+}

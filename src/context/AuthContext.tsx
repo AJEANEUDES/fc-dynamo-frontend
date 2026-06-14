@@ -16,6 +16,7 @@ interface AuthContextType {
     birthDate: string,
   ) => Promise<void>;
   logout: () => Promise<void>;
+  refreshUser: () => Promise<void>;
   isAuthenticated: boolean;
   isAdmin: boolean;
   loading: boolean;
@@ -77,6 +78,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     localStorage.removeItem('token');
   };
 
+  const refreshUser = async () => {
+    const res = await api.get('/auth/me');
+    setUser(res.data);
+  };
+
   return (
     <AuthContext.Provider value={{
       user,
@@ -84,6 +90,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       login,
       register,
       logout,
+      refreshUser,
       isAuthenticated: !!user,
       isAdmin: user?.role === 'admin',
       loading,

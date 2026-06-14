@@ -33,6 +33,7 @@ import StadiumTour from '../pages/StadiumTour';
 import TourBooking from '../pages/TourBooking';
 import TourBookingConfirmation from '../pages/TourBookingConfirmation';
 import MyTourBookings from '../pages/member/MyTourBookings';
+import EditProfile from '../pages/member/EditProfile';
 import Contact from '../pages/Contact';
 import Press from '../pages/Press';
 
@@ -114,6 +115,7 @@ export default function AppRouter() {
             <Route path="/mon-espace/billets" element={<RequireAuth><MyTickets /></RequireAuth>} />
             <Route path="/mon-espace/commandes" element={<RequireAuth><MyOrders /></RequireAuth>} />
             <Route path="/mon-espace/excursions" element={<RequireAuth><MyTourBookings /></RequireAuth>} />
+            <Route path="/mon-espace/profil" element={<RequireAuth><EditProfile /></RequireAuth>} />
 
             {/* Admin */}
             <Route path="/admin" element={<RequireAdmin><AdminDashboard /></RequireAdmin>} />

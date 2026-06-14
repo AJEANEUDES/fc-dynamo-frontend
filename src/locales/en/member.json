@@ -1,0 +1,44 @@
+{
+  "dashboard": {
+    "title": "My Account",
+    "welcome": "Welcome",
+    "memberSince": "Member since",
+    "cards": {
+      "tickets": "My Tickets",
+      "ticketsDesc": "History of purchased tickets",
+      "orders": "My Orders",
+      "ordersDesc": "Shop order history",
+      "tours": "My Tours",
+      "toursDesc": "Booked stadium tours",
+      "profile": "My Profile",
+      "profileDesc": "Edit personal information"
+    }
+  },
+  "orders": {
+    "title": "My Orders",
+    "empty": "You have no orders yet",
+    "order": "Order",
+    "date": "Date",
+    "total": "Total",
+    "backToDashboard": "← My Account",
+    "status": {
+      "pending": "Processing",
+      "paid": "Paid",
+      "shipped": "Shipped",
+      "cancelled": "Cancelled"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "backToDashboard": "← My Account",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "passwordSection": "Change password",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "save": "Save changes",
+    "saving": "Saving...",
+    "success": "Profile updated successfully!"
+  }
+}
