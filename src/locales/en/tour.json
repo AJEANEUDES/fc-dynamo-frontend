@@ -1,0 +1,48 @@
+{
+  "title": "Stadium Tour",
+  "subtitle": "Discover the world of FC Dynamo City",
+  "bookNow": "Book Now",
+  "priceAdult": "Adult",
+  "priceChild": "Child",
+  "perPerson": "pp",
+  "noTours": "Tours temporarily unavailable",
+  "calendar": {
+    "title": "Select date and time",
+    "noSlots": "No available slots this month",
+    "available": "Available",
+    "full": "Full",
+    "remaining": "spots",
+    "selectSlot": "Select time"
+  },
+  "booking": {
+    "title": "Book a tour",
+    "slot": "Date & Time",
+    "qtyAdult": "Adults",
+    "qtyChild": "Children",
+    "total": "Total",
+    "submit": "Book Now",
+    "submitting": "Processing...",
+    "selectSlotFirst": "Please select a date and time",
+    "backToTours": "← Back to tours",
+    "minAdult": "Minimum 1 adult"
+  },
+  "confirmation": {
+    "title": "Tour successfully booked!",
+    "subtitle": "Your booking is confirmed",
+    "tour": "Tour",
+    "date": "Date",
+    "time": "Start time",
+    "qtyAdult": "Adults",
+    "qtyChild": "Children",
+    "total": "Total",
+    "myBookings": "My tours",
+    "continueShopping": "Back to tours"
+  },
+  "myBookings": {
+    "title": "My Tours",
+    "empty": "You have no booked tours yet",
+    "qtyAdult": "Adults",
+    "qtyChild": "Children",
+    "total": "Total"
+  }
+}

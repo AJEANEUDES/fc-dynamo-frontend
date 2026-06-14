@@ -29,6 +29,10 @@ import Tickets from '../pages/Tickets';
 import Ticketing from '../pages/Ticketing';
 import TicketPurchase from '../pages/TicketPurchase';
 import TicketConfirmation from '../pages/TicketConfirmation';
+import StadiumTour from '../pages/StadiumTour';
+import TourBooking from '../pages/TourBooking';
+import TourBookingConfirmation from '../pages/TourBookingConfirmation';
+import MyTourBookings from '../pages/member/MyTourBookings';
 import Contact from '../pages/Contact';
 import Press from '../pages/Press';
 
@@ -92,6 +96,10 @@ export default function AppRouter() {
             {/* /billetterie/confirmation doit être AVANT /:matchId pour éviter le conflit de route */}
             <Route path="/billetterie/confirmation" element={<RequireAuth><TicketConfirmation /></RequireAuth>} />
             <Route path="/billetterie/:matchId" element={<RequireAuth><TicketPurchase /></RequireAuth>} />
+            <Route path="/tour" element={<StadiumTour />} />
+            {/* /tour/confirmation doit être AVANT /:tourId/reserver pour éviter le conflit de route */}
+            <Route path="/tour/confirmation" element={<RequireAuth><TourBookingConfirmation /></RequireAuth>} />
+            <Route path="/tour/:tourId/reserver" element={<RequireAuth><TourBooking /></RequireAuth>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/presse" element={<Press />} />
 
@@ -104,6 +112,7 @@ export default function AppRouter() {
             <Route path="/mon-espace" element={<RequireAuth><MemberDashboard /></RequireAuth>} />
             <Route path="/mon-espace/billets" element={<RequireAuth><MyTickets /></RequireAuth>} />
             <Route path="/mon-espace/commandes" element={<RequireAuth><MyOrders /></RequireAuth>} />
+            <Route path="/mon-espace/excursions" element={<RequireAuth><MyTourBookings /></RequireAuth>} />
 
             {/* Admin */}
             <Route path="/admin" element={<RequireAdmin><AdminDashboard /></RequireAdmin>} />

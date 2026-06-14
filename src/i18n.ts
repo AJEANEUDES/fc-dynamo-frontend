@@ -14,6 +14,7 @@ import ruVideos from './locales/ru/videos.json';
 import ruGallery from './locales/ru/gallery.json';
 import ruShop from './locales/ru/shop.json';
 import ruTickets from './locales/ru/tickets.json';
+import ruTour from './locales/ru/tour.json';
 import ruAuth from './locales/ru/auth.json';
 import ruAdmin from './locales/ru/admin.json';
 
@@ -30,6 +31,7 @@ import enVideos from './locales/en/videos.json';
 import enGallery from './locales/en/gallery.json';
 import enShop from './locales/en/shop.json';
 import enTickets from './locales/en/tickets.json';
+import enTour from './locales/en/tour.json';
 import enAuth from './locales/en/auth.json';
 import enAdmin from './locales/en/admin.json';
 
@@ -39,15 +41,15 @@ i18n
     lng: 'ru',
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
-    ns: ['common', 'home', 'club', 'stadium', 'campus', 'sponsors', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'tickets', 'auth', 'admin'],
+    ns: ['common', 'home', 'club', 'stadium', 'campus', 'sponsors', 'team', 'matches', 'news', 'videos', 'gallery', 'shop', 'tickets', 'tour', 'auth', 'admin'],
     defaultNS: 'common',
     resources: {
       ru: { common: ruCommon, home: ruHome, club: ruClub, stadium: ruStadium, campus: ruCampus,
             sponsors: ruSponsors, team: ruTeam, matches: ruMatches, news: ruNews,
-            videos: ruVideos, gallery: ruGallery, shop: ruShop, tickets: ruTickets, auth: ruAuth, admin: ruAdmin },
+            videos: ruVideos, gallery: ruGallery, shop: ruShop, tickets: ruTickets, tour: ruTour, auth: ruAuth, admin: ruAdmin },
       en: { common: enCommon, home: enHome, club: enClub, stadium: enStadium, campus: enCampus,
             sponsors: enSponsors, team: enTeam, matches: enMatches, news: enNews,
-            videos: enVideos, gallery: enGallery, shop: enShop, tickets: enTickets, auth: enAuth, admin: enAdmin },
+            videos: enVideos, gallery: enGallery, shop: enShop, tickets: enTickets, tour: enTour, auth: enAuth, admin: enAdmin },
     },
     interpolation: { escapeValue: false },
   });
