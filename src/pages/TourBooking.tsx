@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { AxiosError } from 'axios';
 import { useGet } from '../hooks/useGet';
-import { useLocalized } from '../hooks/useLocalized';
+import { useLocalized } from '../hooks/useLocale';
 import { useAuth } from '../context/AuthContext';
 import TourCalendar from '../components/shared/TourCalendar';
 import api from '../api/axios';

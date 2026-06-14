@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGet } from '../../hooks/useGet';
-import { useLocalized } from '../../hooks/useLocalized';
+import { useLocalized } from '../../hooks/useLocale';
 import type { TourSlot } from '../../types';
 
 interface Props {

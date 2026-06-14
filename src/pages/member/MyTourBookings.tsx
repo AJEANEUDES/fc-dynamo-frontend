@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useGet } from '../../hooks/useGet';
-import { useLocalized } from '../../hooks/useLocalized';
+import { useLocalized } from '../../hooks/useLocale';
 import type { TourBooking } from '../../types';
 
 export default function MyTourBookings() {

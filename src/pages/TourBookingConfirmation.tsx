@@ -1,6 +1,6 @@
 import { useLocation, Link, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useLocalized } from '../hooks/useLocalized';
+import { useLocalized } from '../hooks/useLocale';
 import type { TourBooking } from '../types';
 
 interface LocationState {
