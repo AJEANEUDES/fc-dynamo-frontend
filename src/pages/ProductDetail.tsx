@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useGet } from '../hooks/useApi';
 import type { Product } from '../types';
 import { useLocalized } from '../hooks/useLocale';
+import { useCart } from '../context/CartContext';
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL'] as const;
 type Size = (typeof SIZES)[number];
@@ -16,6 +17,7 @@ export default function ProductDetail() {
   const { pick } = useLocalized();
   const { data: product, isLoading } = useGet<Product>(['product', id ?? ''], `/products/${id}`);
 
+  const { addItem } = useCart();
   const [imgError, setImgError] = useState(false);
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [flocageName, setFlocageName] = useState('');
@@ -30,6 +32,13 @@ export default function ProductDetail() {
 
   function handleAddToCart() {
     if (flocageNameError || !product || product.stock === 0) return;
+    addItem({
+      product,
+      quantity: 1,
+      size: selectedSize ?? undefined,
+      flocage_name_ru: flocageName.trim() || undefined,
+      flocage_number: flocageNumber ? parseInt(flocageNumber, 10) : undefined,
+    });
     setAdded(true);
     setTimeout(() => setAdded(false), 2500);
   }

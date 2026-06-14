@@ -27,5 +27,41 @@
     "lifestyle": "Lifestyle"
   },
   "back": "Back to Shop",
-  "added": "Added to cart"
+  "added": "Added to cart",
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyHint": "Go to shop",
+    "size": "Size",
+    "flocageName": "Name",
+    "flocageNumber": "Number",
+    "quantity": "Qty",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "summary": "Order summary",
+    "address": {
+      "title": "Delivery address",
+      "name": "Recipient name",
+      "street": "Street and number",
+      "city": "City",
+      "zip": "ZIP code",
+      "country": "Country"
+    },
+    "submit": "Place order",
+    "submitting": "Processing...",
+    "stockError": "Insufficient stock",
+    "serverError": "Error processing order. Please try again."
+  },
+  "confirmation": {
+    "title": "Order placed!",
+    "subtitle": "Thank you for shopping at FC Dynamo City",
+    "orderNumber": "Order number",
+    "continueShopping": "Continue shopping",
+    "myOrders": "My orders"
+  }
 }

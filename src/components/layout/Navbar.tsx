@@ -1,12 +1,14 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../context/AuthContext';
+import { useCart } from '../../context/CartContext';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function Navbar() {
   const { t } = useTranslation('common');
   const { locale, toggleLanguage } = useLanguage();
   const { isAuthenticated, isAdmin, user, logout } = useAuth();
+  const { itemCount } = useCart();
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? 'text-[#C8A951]' : 'hover:text-[#C8A951] transition-colors';
@@ -29,6 +31,23 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3 text-sm">
+          {/* Cart button */}
+          <Link
+            to="/panier"
+            className="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-[#1E3A5F] transition-colors"
+            aria-label={t('nav.cart')}
+          >
+            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            {itemCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-[#C0392B] text-white text-[10px] font-extrabold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1 leading-none">
+                {itemCount > 99 ? '99+' : itemCount}
+              </span>
+            )}
+          </Link>
+
           <button
             onClick={toggleLanguage}
             className="flex items-center gap-1 bg-[#1E3A5F] px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-[#2C5F8A] transition-colors"

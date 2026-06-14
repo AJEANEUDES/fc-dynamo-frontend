@@ -22,6 +22,9 @@ import MatchDetail from '../pages/MatchDetail';
 import Standings from '../pages/Standings';
 import Shop from '../pages/Shop';
 import ProductDetail from '../pages/ProductDetail';
+import Cart from '../pages/Cart';
+import Checkout from '../pages/Checkout';
+import OrderConfirmation from '../pages/OrderConfirmation';
 import Tickets from '../pages/Tickets';
 import Contact from '../pages/Contact';
 import Press from '../pages/Press';
@@ -78,6 +81,9 @@ export default function AppRouter() {
             <Route path="/classement" element={<Standings />} />
             <Route path="/boutique" element={<Shop />} />
             <Route path="/boutique/:id" element={<ProductDetail />} />
+            <Route path="/panier" element={<Cart />} />
+            <Route path="/commande" element={<RequireAuth><Checkout /></RequireAuth>} />
+            <Route path="/commande-confirmee" element={<RequireAuth><OrderConfirmation /></RequireAuth>} />
             <Route path="/billets" element={<Tickets />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/presse" element={<Press />} />
