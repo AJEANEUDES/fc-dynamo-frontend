@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { AxiosError } from 'axios';
-import { useGet } from '../hooks/useGet';
+import { useGet } from '../hooks/useApi';
 import { useLocalized } from '../hooks/useLocale';
 import { useAuth } from '../context/AuthContext';
 import TourCalendar from '../components/shared/TourCalendar';

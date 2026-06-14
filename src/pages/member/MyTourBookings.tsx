@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useGet } from '../../hooks/useGet';
+import { useGet } from '../../hooks/useApi';
 import { useLocalized } from '../../hooks/useLocale';
 import type { TourBooking } from '../../types';
 
