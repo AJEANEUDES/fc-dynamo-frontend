@@ -21,6 +21,7 @@ import Matches from '../pages/Matches';
 import MatchDetail from '../pages/MatchDetail';
 import Standings from '../pages/Standings';
 import Shop from '../pages/Shop';
+import ProductDetail from '../pages/ProductDetail';
 import Tickets from '../pages/Tickets';
 import Contact from '../pages/Contact';
 import Press from '../pages/Press';
@@ -76,6 +77,7 @@ export default function AppRouter() {
             <Route path="/matchs/:id" element={<MatchDetail />} />
             <Route path="/classement" element={<Standings />} />
             <Route path="/boutique" element={<Shop />} />
+            <Route path="/boutique/:id" element={<ProductDetail />} />
             <Route path="/billets" element={<Tickets />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/presse" element={<Press />} />

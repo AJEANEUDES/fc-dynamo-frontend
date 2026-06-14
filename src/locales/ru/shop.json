@@ -1,3 +1,31 @@
 {
-  "title": "Магазин"
+  "title": "Официальный магазин",
+  "subtitle": "Продукция FC Dynamo City",
+  "noProducts": "Нет товаров в этой категории",
+  "inStock": "В наличии",
+  "outOfStock": "Нет в наличии",
+  "customizable": "Персонализация",
+  "addToCart": "В корзину",
+  "stockLabel": "На складе",
+  "sizeLabel": "Размер",
+  "flocage": {
+    "title": "Персонализация флока",
+    "nameLabel": "Имя (кириллицей)",
+    "namePlaceholder": "Иванов",
+    "numberLabel": "Номер (0–99)",
+    "preview": "Предпросмотр",
+    "invalidName": "Только кириллица и пробелы",
+    "note": "Только буквы кириллицы"
+  },
+  "categories": {
+    "all": "Все товары",
+    "maillots": "Футболки",
+    "shorts": "Шорты",
+    "vestes": "Куртки",
+    "accessoires": "Аксессуары",
+    "entrainement": "Тренировочная",
+    "lifestyle": "Лайфстайл"
+  },
+  "back": "Назад в магазин",
+  "added": "Добавлено в корзину"
 }

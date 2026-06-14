@@ -1,3 +1,31 @@
 {
-  "title": "Shop"
+  "title": "Official Shop",
+  "subtitle": "FC Dynamo City Merchandise",
+  "noProducts": "No products in this category",
+  "inStock": "In Stock",
+  "outOfStock": "Out of Stock",
+  "customizable": "Customizable",
+  "addToCart": "Add to Cart",
+  "stockLabel": "In stock",
+  "sizeLabel": "Size",
+  "flocage": {
+    "title": "Jersey Customization",
+    "nameLabel": "Name (Cyrillic)",
+    "namePlaceholder": "Иванов",
+    "numberLabel": "Number (0–99)",
+    "preview": "Preview",
+    "invalidName": "Cyrillic letters and spaces only",
+    "note": "Cyrillic letters only"
+  },
+  "categories": {
+    "all": "All Products",
+    "maillots": "Jerseys",
+    "shorts": "Shorts",
+    "vestes": "Jackets",
+    "accessoires": "Accessories",
+    "entrainement": "Training",
+    "lifestyle": "Lifestyle"
+  },
+  "back": "Back to Shop",
+  "added": "Added to cart"
 }
