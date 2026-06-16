@@ -15,7 +15,8 @@
     "matches": "Матчи",
     "articles": "Статьи",
     "products": "Магазин",
-    "users": "Пользователи"
+    "users": "Пользователи",
+    "tours": "Экскурсии"
   },
   "stats": {
     "users": "Пользователи",
@@ -105,5 +106,22 @@
     "role": "Роль",
     "since": "Дата регистрации",
     "changeRole": "Изменить роль"
+  },
+  "tours": {
+    "title": "Управление экскурсиями",
+    "name": "Название",
+    "priceAdult": "Цена (взрослый)",
+    "priceChild": "Цена (ребёнок)",
+    "active": "Активно",
+    "addTitle": "Добавить экскурсию",
+    "editTitle": "Редактировать экскурсию",
+    "nameRu": "Название (RU)",
+    "nameEn": "Название (EN)",
+    "descriptionRu": "Описание (RU)",
+    "descriptionEn": "Описание (EN)",
+    "priceAdultLabel": "Цена взрослый (€)",
+    "priceChildLabel": "Цена детский (€)",
+    "imageLabel": "Изображение (URL)",
+    "isActive": "Активно"
   }
 }

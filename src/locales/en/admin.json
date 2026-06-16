@@ -15,7 +15,8 @@
     "matches": "Matches",
     "articles": "Articles",
     "products": "Shop",
-    "users": "Users"
+    "users": "Users",
+    "tours": "Tours"
   },
   "stats": {
     "users": "Users",
@@ -105,5 +106,22 @@
     "role": "Role",
     "since": "Member since",
     "changeRole": "Change role"
+  },
+  "tours": {
+    "title": "Manage tours",
+    "name": "Name",
+    "priceAdult": "Price (adult)",
+    "priceChild": "Price (child)",
+    "active": "Active",
+    "addTitle": "Add tour",
+    "editTitle": "Edit tour",
+    "nameRu": "Name (RU)",
+    "nameEn": "Name (EN)",
+    "descriptionRu": "Description (RU)",
+    "descriptionEn": "Description (EN)",
+    "priceAdultLabel": "Price adult (€)",
+    "priceChildLabel": "Price child (€)",
+    "imageLabel": "Image (URL)",
+    "isActive": "Active"
   }
 }
