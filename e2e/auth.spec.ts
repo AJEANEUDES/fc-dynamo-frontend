@@ -7,13 +7,13 @@ test.describe('Authentification', () => {
   test('inscription réussie redirige vers confirmation en russe', async ({ page }) => {
     await page.goto('/inscription');
 
-    await expect(page.getByText('Регистрация')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Регистрация', level: 1 })).toBeVisible();
 
     await page.getByLabel('Имя').fill('Тест');
     await page.getByLabel('Фамилия').fill('Пользователь');
     await page.getByLabel('Электронная почта').fill(UNIQUE_EMAIL);
     await page.getByLabel('Дата рождения').fill('2000-01-15');
-    await page.getByLabel('Пароль').first().fill(TEST_PASS);
+    await page.getByLabel('Пароль', { exact: true }).fill(TEST_PASS);
     await page.getByLabel('Подтвердите пароль').fill(TEST_PASS);
 
     await page.getByRole('button', { name: 'Создать аккаунт' }).click();
@@ -26,7 +26,7 @@ test.describe('Authentification', () => {
   test('connexion valide redirige vers /mon-espace', async ({ page }) => {
     await page.goto('/connexion');
 
-    await expect(page.getByText('Вход в аккаунт')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Вход в аккаунт', level: 1 })).toBeVisible();
 
     await page.getByLabel('Электронная почта').fill('ivan@example.ru');
     await page.getByLabel('Пароль').fill('Member1234!');

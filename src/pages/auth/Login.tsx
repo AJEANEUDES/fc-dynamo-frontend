@@ -33,13 +33,13 @@ export default function Login() {
         {error && <p className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-2 mb-4">{error}</p>}
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:login.email')}</label>
-            <input type="email" {...register('email', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:login.email')}</label>
+            <input id="email" type="email" {...register('email', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
             {errors.email && <p className="text-red-500 text-xs mt-1">{t('common:errors.required')}</p>}
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:login.password')}</label>
-            <input type="password" {...register('password', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:login.password')}</label>
+            <input id="password" type="password" {...register('password', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
             {errors.password && <p className="text-red-500 text-xs mt-1">{t('common:errors.required')}</p>}
           </div>
           <button type="submit" disabled={isSubmitting} className="w-full bg-[#0A2342] text-white font-bold py-2 rounded-lg hover:bg-[#1E3A5F] disabled:opacity-50">

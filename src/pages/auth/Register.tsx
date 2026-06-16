@@ -46,34 +46,34 @@ export default function Register() {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.firstName')}</label>
-              <input {...register('first_name', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+              <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.firstName')}</label>
+              <input id="first-name" {...register('first_name', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
               {errors.first_name && <p className="text-red-500 text-xs mt-1">{t('common:errors.required')}</p>}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.lastName')}</label>
-              <input {...register('last_name', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+              <label htmlFor="last-name" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.lastName')}</label>
+              <input id="last-name" {...register('last_name', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
               {errors.last_name && <p className="text-red-500 text-xs mt-1">{t('common:errors.required')}</p>}
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.email')}</label>
-            <input type="email" {...register('email', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+            <label htmlFor="reg-email" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.email')}</label>
+            <input id="reg-email" type="email" {...register('email', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
             {errors.email && <p className="text-red-500 text-xs mt-1">{t('common:errors.required')}</p>}
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.birthDate')}</label>
-            <input type="date" {...register('birth_date', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+            <label htmlFor="birth-date" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.birthDate')}</label>
+            <input id="birth-date" type="date" {...register('birth_date', { required: true })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
             {errors.birth_date && <p className="text-red-500 text-xs mt-1">{t('common:errors.required')}</p>}
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.password')}</label>
-            <input type="password" {...register('password', { required: true, minLength: 8 })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.password')}</label>
+            <input id="password" type="password" {...register('password', { required: true, minLength: 8 })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
             {errors.password && <p className="text-red-500 text-xs mt-1">{t('common:errors.passwordTooShort')}</p>}
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.confirmPassword')}</label>
-            <input type="password" {...register('password_confirmation', {
+            <label htmlFor="password-confirmation" className="block text-sm font-medium text-gray-700 mb-1">{t('auth:register.confirmPassword')}</label>
+            <input id="password-confirmation" type="password" {...register('password_confirmation', {
               required: true,
               validate: (v) => v === password || t('common:errors.passwordMismatch'),
             })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#0A2342] outline-none" />
