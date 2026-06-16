@@ -16,7 +16,9 @@
     "articles": "Статьи",
     "products": "Магазин",
     "users": "Пользователи",
-    "tours": "Экскурсии"
+    "tours": "Экскурсии",
+    "galleries": "Галереи",
+    "videos": "Видео"
   },
   "stats": {
     "users": "Пользователи",
@@ -106,6 +108,40 @@
     "role": "Роль",
     "since": "Дата регистрации",
     "changeRole": "Изменить роль"
+  },
+  "galleries": {
+    "title": "Управление галереями",
+    "titleCol": "Название",
+    "published": "Опубликовано",
+    "addTitle": "Добавить галерею",
+    "editTitle": "Редактировать галерею",
+    "titleRu": "Название (RU)",
+    "titleEn": "Название (EN)",
+    "coverImage": "Обложка (URL)",
+    "publishedAt": "Дата публикации"
+  },
+  "videos": {
+    "title": "Управление видео",
+    "titleCol": "Название",
+    "type": "Тип",
+    "published": "Опубликовано",
+    "addTitle": "Добавить видео",
+    "editTitle": "Редактировать видео",
+    "titleRu": "Название (RU)",
+    "titleEn": "Название (EN)",
+    "typeLabel": "Тип видео",
+    "descriptionRu": "Описание (RU)",
+    "videoUrl": "Ссылка на видео",
+    "thumbnail": "Превью (URL)",
+    "duration": "Длительность (сек.)",
+    "publishedAt": "Дата публикации",
+    "types": {
+      "temps-forts": "Лучшие моменты",
+      "no-comment": "Без комментариев",
+      "emission": "Передача",
+      "interview": "Интервью",
+      "carte-blanche": "Карт-бланш"
+    }
   },
   "tours": {
     "title": "Управление экскурсиями",

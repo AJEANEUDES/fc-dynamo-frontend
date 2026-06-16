@@ -16,7 +16,9 @@
     "articles": "Articles",
     "products": "Shop",
     "users": "Users",
-    "tours": "Tours"
+    "tours": "Tours",
+    "galleries": "Galleries",
+    "videos": "Videos"
   },
   "stats": {
     "users": "Users",
@@ -106,6 +108,40 @@
     "role": "Role",
     "since": "Member since",
     "changeRole": "Change role"
+  },
+  "galleries": {
+    "title": "Manage galleries",
+    "titleCol": "Title",
+    "published": "Published",
+    "addTitle": "Add gallery",
+    "editTitle": "Edit gallery",
+    "titleRu": "Title (RU)",
+    "titleEn": "Title (EN)",
+    "coverImage": "Cover image (URL)",
+    "publishedAt": "Publication date"
+  },
+  "videos": {
+    "title": "Manage videos",
+    "titleCol": "Title",
+    "type": "Type",
+    "published": "Published",
+    "addTitle": "Add video",
+    "editTitle": "Edit video",
+    "titleRu": "Title (RU)",
+    "titleEn": "Title (EN)",
+    "typeLabel": "Video type",
+    "descriptionRu": "Description (RU)",
+    "videoUrl": "Video URL",
+    "thumbnail": "Thumbnail (URL)",
+    "duration": "Duration (sec.)",
+    "publishedAt": "Publication date",
+    "types": {
+      "temps-forts": "Highlights",
+      "no-comment": "No comment",
+      "emission": "Show",
+      "interview": "Interview",
+      "carte-blanche": "Carte blanche"
+    }
   },
   "tours": {
     "title": "Manage tours",
